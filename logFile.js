@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 
   // Log to console
   console.log(logEntry);
-
+  
   // Append to file
   fs.appendFile('access.log', logEntry, (err) => {
     if (err) console.error('Error writing to log file', err);
